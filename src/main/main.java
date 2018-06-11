@@ -12,9 +12,9 @@ import Vagos.*;
  */
 public class main {
     public static void main(String[] args) {  
-        FactoryBallas ballas = new FactoryBallas();   
-        FactoryVagos vagos = new FactoryVagos();   
-        FactoryFamilies families = new FactoryFamilies();
+        FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();   
+        FactoryVagosEdificaciones vagos = new FactoryVagosEdificaciones();   
+        FactoryFamiliesEdificaciones families = new FactoryFamiliesEdificaciones();
         
         ballas.getBallas(1).crearEdificacionRecursos();
         vagos.getVagos(2).crearEdificacionRecursos();

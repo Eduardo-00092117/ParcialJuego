@@ -6,9 +6,9 @@ import java.util.*;
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class EdificioVehiculo implements VehiculoPlan{
+public class EdificioVehiculo implements EntrenamientoPlan{
     public String nombre, raza, tipoVehiculo;
-    public int costo1, costo2, recurso1, recurso2, vida;
+    public int costo1, costo2, recurso1, recurso2, vida, tiempo;
     
     public ArrayList<EdificioVehiculo> edificioEntrenamiento = new ArrayList<>();
 
@@ -78,5 +78,15 @@ public class EdificioVehiculo implements VehiculoPlan{
     @Override
     public String getTipo() {
         return this.tipoVehiculo;
+    }
+
+    @Override
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    @Override
+    public int getTiempo() {
+        return this.tiempo;
     }
 }

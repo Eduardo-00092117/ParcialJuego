@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class EdificioEntrenamiento implements EntrenamientoPlan{
     public String nombre, raza;
-    public int costo1, costo2, recurso1, recurso2, vida;
+    public int costo1, costo2, recurso1, recurso2, vida, tiempo;
     
     public ArrayList<EdificioEntrenamiento> edificioEntrenamiento = new ArrayList<>();
 
@@ -69,4 +69,14 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
         costo[1] = this.costo2;
         return costo;
     }   
+
+    @Override
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    @Override
+    public int getTiempo() {
+        return this.tiempo;
+    }
 }

@@ -12,10 +12,12 @@ public interface EntrenamientoPlan {
     public void setRaza(String raza);
     public void setCosto1(int recurso, int costo1);
     public void setCosto2(int recurso, int costo2);
+    public void setTiempo(int tiempo);
     
     public String getNombre();
     public int getVida();
     public String getRaza();
     public int[] getCosto1();
     public int[] getCosto2();
+    public int getTiempo();
 }

@@ -1,6 +1,5 @@
 
 package EdificacionRecurso;
-import Raza.*;
 import java.util.*;
 
 /**
@@ -9,7 +8,7 @@ import java.util.*;
  */
 public class EdificioRecurso implements RecursosPlan{
     public String nombre, raza;
-    public int capacidad, vida, montoActual;
+    public int capacidad, vida, montoActual, tiempo;
     
     public ArrayList<EdificioRecurso> edificioRecurso = new ArrayList<>();
     
@@ -61,5 +60,15 @@ public class EdificioRecurso implements RecursosPlan{
     @Override
     public int getCapacidad() {
         return this.capacidad;
+    }
+
+    @Override
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    @Override
+    public int getTiempo() {
+        return this.tiempo;
     }
 }

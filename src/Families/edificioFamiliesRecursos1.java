@@ -1,8 +1,6 @@
 
 package Families;
 import EdificacionRecurso.EdificioRecurso;
-import Ballas.*;
-import EdificacionEntrenamiento.EdificioEntrenamiento;
 import Raza.*;
 
 /**

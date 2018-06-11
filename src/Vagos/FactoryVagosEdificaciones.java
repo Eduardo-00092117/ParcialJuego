@@ -8,7 +8,7 @@ import Raza.*;
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class FactoryVagos implements AbstracFactory{
+public class FactoryVagosEdificaciones implements AbstracFactory{
 
     @Override
     public Razas getBallas(int opc) {

@@ -1,7 +1,5 @@
 
 package Raza;
-import EdificacionRecurso.EdificioRecurso;
-import EdificacionEntrenamiento.EdificioEntrenamiento;
 
 /**
  *

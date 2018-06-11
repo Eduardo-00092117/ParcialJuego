@@ -1,9 +1,9 @@
 
 package Raza;
 
-import Vagos.FactoryVagos;
-import Families.FactoryFamilies;
-import Ballas.FactoryBallas;
+import Vagos.FactoryVagosEdificaciones;
+import Families.FactoryFamiliesEdificaciones;
+import Ballas.FactoryBallasEdificaciones;
 
 /**
  *
@@ -13,11 +13,11 @@ public class FactoryProducer {
     public static AbstracFactory getRaza(String type){
         switch(type){
             case "BALLAS":
-                return new FactoryBallas();
+                return new FactoryBallasEdificaciones();
             case "VAGOS":
-                return new FactoryVagos();
+                return new FactoryVagosEdificaciones();
             case "FAMILIES":
-                return new FactoryFamilies();
+                return new FactoryFamiliesEdificaciones();
         }
         return null;
     }
