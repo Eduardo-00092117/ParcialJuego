@@ -1,27 +1,30 @@
 
 package Ballas;
-import Edificacion.*;
-import Raza.*;
+import EdificacionEntrenamiento.EdificioEntrenamiento;
+import EdificacionRecurso.EdificioRecurso;
+import Raza.Razas;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class edificioBallasRecursos1 implements Ballas{
-    private static Edificio edificio = new Edificio();
+public class edificioBallasRecursos1 implements Razas{
+    private static EdificioRecurso edificio = new EdificioRecurso();
     
-    public static Edificio getInstance(){
+    public static EdificioRecurso getInstance(){
         return edificio;
     }
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Ballas - Cuartel capital"); 
+        edificio.setNombre("Cuartel capital");
+        edificio.setMontoActual(1000);
+        edificio.setRaza("Ballas");
+        edificio.setVida(100);
         edificio.setCapacidad(10000);
     }
 
     @Override
-    public Edificio getEdificioRecursos() {
-        return this.edificio;
-    }
+    public void crearEdificacionEntrenamiento() {}
+
 }

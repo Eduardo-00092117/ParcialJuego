@@ -1,9 +1,8 @@
 
 package Vagos;
 
-import Families.Families;
-import Ballas.Ballas;
 import Raza.AbstracFactory;
+import Raza.*;
 
 /**
  *
@@ -12,17 +11,17 @@ import Raza.AbstracFactory;
 public class FactoryVagos implements AbstracFactory{
 
     @Override
-    public Ballas getBallas(int opc) {
+    public Razas getBallas(int opc) {
         return null;
     }
 
     @Override
-    public Families getFamilies(int opc) {
+    public Razas getFamilies(int opc) {
         return null;
     }
 
     @Override
-    public Vagos getVagos(int opc) {
+    public Razas getVagos(int opc) {
         switch (opc) {
             case 1:
                 return new edificioVagosRecursos1();

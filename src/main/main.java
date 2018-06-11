@@ -1,8 +1,7 @@
 
 package main;
 
-import Raza.*;
-import Edificacion.*;
+import EdificacionRecurso.EdificioRecurso;
 import Ballas.*;
 import Families.*;
 import Vagos.*;
@@ -12,7 +11,7 @@ import Vagos.*;
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {  
         FactoryBallas ballas = new FactoryBallas();   
         FactoryVagos vagos = new FactoryVagos();   
         FactoryFamilies families = new FactoryFamilies();
@@ -21,15 +20,15 @@ public class main {
         vagos.getVagos(2).crearEdificacionRecursos();
         families.getFamilies(3).crearEdificacionRecursos();
         
-        Edificio edificio = edificioBallasRecursos1.getInstance();
-        edificio.edificio.add(edificio);
-        Edificio edificio2 = edificioVagosRecursos2.getInstance();
-        edificio.edificio.add(edificio2);
-        Edificio edificio3 = edificioFamiliesRecursos3.getInstance();
-        edificio.edificio.add(edificio3);
+        EdificioRecurso edificio = edificioBallasRecursos1.getInstance();
+        edificio.edificioRecurso.add(edificio);
+        EdificioRecurso edificio2 = edificioVagosRecursos2.getInstance();
+        edificio.edificioRecurso.add(edificio2);
+        EdificioRecurso edificio3 = edificioFamiliesRecursos3.getInstance();
+        edificio.edificioRecurso.add(edificio3);
         
-        System.out.println(edificio.edificio.get(0).getNombre());
-        System.out.println(edificio.edificio.get(1).getNombre());
-        System.out.println(edificio.edificio.get(2).getNombre());
+        System.out.println(edificio.edificioRecurso.get(0).getNombre() + " - " + edificio.edificioRecurso.get(0).getRaza());
+        System.out.println(edificio.edificioRecurso.get(1).getNombre() + " - " + edificio.edificioRecurso.get(1).getRaza());
+        System.out.println(edificio.edificioRecurso.get(2).getNombre() + " - " + edificio.edificioRecurso.get(2).getRaza());
     }
 }

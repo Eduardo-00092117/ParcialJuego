@@ -1,28 +1,30 @@
 
 package Families;
+import EdificacionRecurso.EdificioRecurso;
 import Ballas.*;
-import Edificacion.*;
+import EdificacionEntrenamiento.EdificioEntrenamiento;
 import Raza.*;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class edificioFamiliesRecursos1 implements Families{
-    private static Edificio edificio = new Edificio();
+public class edificioFamiliesRecursos1 implements Razas{
+    private static EdificioRecurso edificio = new EdificioRecurso();
     
-    public static Edificio getInstance(){
+    public static EdificioRecurso getInstance(){
         return edificio;
     }
 
     @Override
     public void crearEdificacionRecursos() {
         edificio.setNombre("Cuartel capital"); 
+        edificio.setMontoActual(1000);
+        edificio.setRaza("Families");
+        edificio.setVida(100);
         edificio.setCapacidad(10000);
     }
 
     @Override
-    public Edificio getEdificioRecursos() {
-        return this.edificio;
-    }
+    public void crearEdificacionEntrenamiento() {}
 }

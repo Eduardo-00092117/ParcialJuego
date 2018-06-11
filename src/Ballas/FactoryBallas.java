@@ -1,9 +1,7 @@
 package Ballas;
 
-import Edificacion.*;
 import Raza.AbstracFactory;
-import Families.Families;
-import Vagos.Vagos;
+import Raza.Razas;
 
 /**
  *
@@ -12,7 +10,7 @@ import Vagos.Vagos;
 public class FactoryBallas implements AbstracFactory {
 
     @Override
-    public Ballas getBallas(int opc) {
+    public Razas getBallas(int opc) {
         switch (opc) {
             case 1:
                 return new edificioBallasRecursos1();
@@ -25,12 +23,12 @@ public class FactoryBallas implements AbstracFactory {
     }
 
     @Override
-    public Families getFamilies(int opc) {
+    public Razas getFamilies(int opc) {
         return null;
     }
 
     @Override
-    public Vagos getVagos(int opc) {
+    public Razas getVagos(int opc) {
         return null;
     }
 
