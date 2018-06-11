@@ -1,17 +1,16 @@
 
 package EdificacionVehiculo;
-import EdificacionEntrenamiento.*;
 import java.util.*;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class EdificioEntrenamiento implements EntrenamientoPlan{
-    public String nombre, raza;
+public class EdificioVehiculo implements VehiculoPlan{
+    public String nombre, raza, tipoVehiculo;
     public int costo1, costo2, recurso1, recurso2, vida;
     
-    public ArrayList<EdificioEntrenamiento> edificioEntrenamiento = new ArrayList<>();
+    public ArrayList<EdificioVehiculo> edificioEntrenamiento = new ArrayList<>();
 
     @Override
     public void setNombre(String nombre) {
@@ -70,4 +69,14 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
         costo[1] = this.costo2;
         return costo;
     }   
+
+    @Override
+    public void setTipo(String tipo) {
+        this.tipoVehiculo = tipo;
+    }
+
+    @Override
+    public String getTipo() {
+        return this.tipoVehiculo;
+    }
 }
