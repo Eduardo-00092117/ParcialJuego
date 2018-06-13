@@ -65,7 +65,7 @@ public class Milicias implements MiliciaPlan{
     }
 
     @Override
-    public int setVida() {
+    public int getVida() {
         return this.vida;
     }
 

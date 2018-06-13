@@ -17,7 +17,7 @@ public interface MiliciaPlan {
     public String getTipoNombre();
     public String getTipoRaza();
     public int getTiempo();
-    public int setVida();
+    public int getVida();
     public int getAtaque();
     public int[] getCosto1();
     public int[] getCosto2();

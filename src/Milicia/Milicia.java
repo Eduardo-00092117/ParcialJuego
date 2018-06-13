@@ -7,4 +7,5 @@ package Milicia;
  */
 public interface Milicia {
     public void crearMilicia();
+    public Milicias getInstance();
 }
