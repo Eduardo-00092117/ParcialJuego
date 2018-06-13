@@ -2,7 +2,9 @@
 package RazaVagos;
 import Raza.*;
 import EdificacionCentroMando.*;
+import EdificacionEntrenamiento.EdificioEntrenamiento;
 import EdificacionRecurso.EdificioRecurso;
+import EdificacionVehiculo.EdificioVehiculo;
 
 /**
  *
@@ -33,6 +35,21 @@ public class edificioCentroMandoVagos implements Razas{
         edificio.setCapacidad1(10000);
         edificio.setCapacidad2(5000);
         edificio.setCapacidad2(3000);
+    }
+
+    @Override
+    public EdificioEntrenamiento getInstance3() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void crearEdificacionVehiculo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public EdificioVehiculo getInstance4() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -1,14 +1,12 @@
 
 package EdificacionVehiculo;
 
-import EdificacionEntrenamiento.*;
-
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public interface EntrenamientoPlan {
+public interface VehiculoPlan {
     public void setNombre(String nombre);
     public void setVida(int vida);
     public void setRaza(String raza);

@@ -30,6 +30,12 @@ public class FactoryVagosEdificaciones implements AbstracFactory{
                 return new edificioVagosRecursos2();
             case 3:
                 return new edificioVagosRecursos3();
+            case 4:
+                return new edificioVagosEntrenamiento();
+            case 5:
+                return new edificioVagosVehiculo1();
+            case 6:
+                return new edificioVagosVehiculo2();
             case 7:
                 return new edificioCentroMandoBallas();
 

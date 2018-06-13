@@ -16,15 +16,15 @@ public class Partida {
     }
     
     public void Iniciar(){
-        Jugador1 jugador = Jugador1.getInstance();
         Menu menu = new Menu();
         menu.menuEleccion();
-        menu.menuEdificaciones();
-        /*jugador.guardarEdificiosRecursos(1);
-        jugador.guardarEdificiosRecursos(2);
-        jugador.guardarEdificiosRecursos(3);
-        for(int i=0; i < jugador.getEdificacionRecurso().size(); i++){
-            System.out.println(jugador.getEdificacionRecurso().get(i).getNombre()+" - "+jugador.getEdificacionRecurso().get(i).getRaza());
-        }*/      
+        turnos();
+        /*menu.menuEdificacionesJugador1();
+        menu.menuEdificacionesJugador2();*/  
+    }
+    
+    public void turnos(){
+        Menu menu = new Menu();
+        menu.menuCompletoJugador1();
     }
 }

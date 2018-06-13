@@ -2,7 +2,9 @@
 package RazaFamilies;
 import Raza.*;
 import EdificacionCentroMando.*;
+import EdificacionEntrenamiento.EdificioEntrenamiento;
 import EdificacionRecurso.EdificioRecurso;
+import EdificacionVehiculo.EdificioVehiculo;
 
 /**
  *
@@ -33,6 +35,21 @@ public class edificioCentroMandoFamilies implements Razas{
 
     @Override
     public EdificioRecurso getInstance() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public EdificioEntrenamiento getInstance3() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void crearEdificacionVehiculo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public EdificioVehiculo getInstance4() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -6,11 +6,11 @@ import java.util.*;
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class EdificioVehiculo implements EntrenamientoPlan{
+public class EdificioVehiculo implements VehiculoPlan{
     public String nombre, raza, tipoVehiculo;
     public int costo1, costo2, recurso1, recurso2, vida, tiempo;
     
-    public ArrayList<EdificioVehiculo> edificioEntrenamiento = new ArrayList<>();
+    public ArrayList<EdificioVehiculo> edificioVehiculo = new ArrayList<>();
 
     @Override
     public void setNombre(String nombre) {

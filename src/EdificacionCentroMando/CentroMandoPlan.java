@@ -1,8 +1,6 @@
 
 package EdificacionCentroMando;
 
-import EdificacionEntrenamiento.*;
-
 
 /**
  *

@@ -1,9 +1,11 @@
 
 package RazaBallas;
+
 import EdificacionCentroMando.EdificioCentroMando;
 import Raza.*;
 import EdificacionEntrenamiento.*;
 import EdificacionRecurso.EdificioRecurso;
+import EdificacionVehiculo.EdificioVehiculo;
 
 /**
  *
@@ -13,13 +15,11 @@ public class edificioBallasEntrenamiento implements Razas{
     
     private static EdificioEntrenamiento edificio = new EdificioEntrenamiento();
     
-    public static EdificioEntrenamiento getInstance3(){
+    public EdificioEntrenamiento getInstance3(){
         return edificio;
     }
     
-    public EdificioRecurso getInstance(){
-        return null;
-    }
+    public EdificioRecurso getInstance(){return null;}
     
     @Override
     public void crearEdificacionRecursos() {}
@@ -38,7 +38,15 @@ public class edificioBallasEntrenamiento implements Razas{
     public void crearCentroMando() {}
 
     @Override
-    public EdificioCentroMando getInstance2() {
+    public EdificioCentroMando getInstance2() {return null;}
+
+    @Override
+    public void crearEdificacionVehiculo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public EdificioVehiculo getInstance4() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
