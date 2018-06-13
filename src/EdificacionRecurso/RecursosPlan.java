@@ -12,6 +12,8 @@ public interface RecursosPlan {
     public void setRaza(String raza);
     public void setCapacidad(int capacidad);
     public void setTiempo(int tiempo);
+    public void setCosto1(int recurso, int costo);
+    public void setCosto2(int recurso, int costo);
     
     public String getNombre();            
     public int getVida();
@@ -19,4 +21,6 @@ public interface RecursosPlan {
     public String getRaza();
     public int getCapacidad();
     public int getTiempo();
+    public int[] getCosto1();
+    public int[] getCosto2();
 }

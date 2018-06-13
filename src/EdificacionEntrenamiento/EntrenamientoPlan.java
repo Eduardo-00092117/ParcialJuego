@@ -1,6 +1,9 @@
 
 package EdificacionEntrenamiento;
 
+import Milicia.Milicias;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -20,4 +23,5 @@ public interface EntrenamientoPlan {
     public int[] getCosto1();
     public int[] getCosto2();
     public int getTiempo();
+    public ArrayList<Milicias> getSoldados(); 
 }

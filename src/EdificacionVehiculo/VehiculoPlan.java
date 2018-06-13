@@ -1,6 +1,9 @@
 
 package EdificacionVehiculo;
 
+import Vehiculos.Vehiculos;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -22,4 +25,5 @@ public interface VehiculoPlan {
     public int[] getCosto1();
     public int[] getCosto2();
     public int getTiempo();
+    public ArrayList<Vehiculos> getVehiculo(); 
 }

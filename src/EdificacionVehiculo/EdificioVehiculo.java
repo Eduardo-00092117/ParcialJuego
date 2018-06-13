@@ -1,5 +1,6 @@
 
 package EdificacionVehiculo;
+import Vehiculos.Vehiculos;
 import java.util.*;
 
 /**
@@ -11,6 +12,7 @@ public class EdificioVehiculo implements VehiculoPlan{
     public int costo1, costo2, recurso1, recurso2, vida, tiempo;
     
     public ArrayList<EdificioVehiculo> edificioVehiculo = new ArrayList<>();
+    public ArrayList<Vehiculos> Vehiculo = new ArrayList<>();
 
     @Override
     public void setNombre(String nombre) {
@@ -88,5 +90,10 @@ public class EdificioVehiculo implements VehiculoPlan{
     @Override
     public int getTiempo() {
         return this.tiempo;
+    }
+
+    @Override
+    public ArrayList<Vehiculos> getVehiculo() {
+        return this.Vehiculo;
     }
 }

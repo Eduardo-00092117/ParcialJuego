@@ -1,5 +1,6 @@
 
 package EdificacionEntrenamiento;
+import Milicia.Milicias;
 import java.util.*;
 
 /**
@@ -11,6 +12,7 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
     public int costo1, costo2, recurso1, recurso2, vida, tiempo;
     
     public ArrayList<EdificioEntrenamiento> edificioEntrenamiento = new ArrayList<>();
+    public ArrayList<Milicias> Milicia = new ArrayList<>();
 
     @Override
     public void setNombre(String nombre) {
@@ -78,5 +80,10 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
     @Override
     public int getTiempo() {
         return this.tiempo;
+    }
+
+    @Override
+    public ArrayList<Milicias> getSoldados() {
+        return this.Milicia;
     }
 }
