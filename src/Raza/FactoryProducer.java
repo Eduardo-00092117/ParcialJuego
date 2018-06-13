@@ -1,9 +1,9 @@
 
 package Raza;
 
-import Vagos.FactoryVagosEdificaciones;
-import Families.FactoryFamiliesEdificaciones;
-import Ballas.FactoryBallasEdificaciones;
+import RazaVagos.FactoryVagosEdificaciones;
+import RazaFamilies.FactoryFamiliesEdificaciones;
+import RazaBallas.FactoryBallasEdificaciones;
 
 /**
  *

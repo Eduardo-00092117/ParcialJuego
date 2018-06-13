@@ -1,9 +1,9 @@
 
 package Milicia;
 
-import Vagos.FactoryVagosMilicia;
-import Families.FactoryFamiliesMilicia;
-import Ballas.FactoryBallasMilicia;
+import RazaVagos.FactoryVagosMilicia;
+import RazaFamilies.FactoryFamiliesMilicia;
+import RazaBallas.FactoryBallasMilicia;
 
 /**
  *

@@ -5,12 +5,13 @@ package Jugadores;
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
+import RazaFamilies.FactoryFamiliesEdificaciones;
+import RazaVagos.FactoryVagosEdificaciones;
+import RazaBallas.FactoryBallasEdificaciones;
 import EdificacionEntrenamiento.*;
 import EdificacionRecurso.*;
 import EdificacionVehiculo.*;
-import Ballas.*;
-import Vagos.*;
-import Families.*;
+import EdificacionCentroMando.EdificioCentroMando;
 import java.util.*;
 
 public class Jugador1 {
@@ -25,7 +26,7 @@ public class Jugador1 {
     private ArrayList<EdificioRecurso> edificacionRecurso = new ArrayList<>();
     private ArrayList<EdificioEntrenamiento> edificioEntrenamiento = new ArrayList<>();
     private ArrayList<EdificioVehiculo> edificioVehiculo = new ArrayList<>();
-    private ArrayList<EdificioVehiculo> edificioCentroMando = new ArrayList<>();
+    private ArrayList<EdificioCentroMando> edificioCentroMando = new ArrayList<>();
     private int raza;
 
     public ArrayList<EdificioRecurso> getEdificacionRecurso() {
@@ -47,6 +48,10 @@ public class Jugador1 {
     public void setRaza(int raza) {
         this.raza = raza;
     }
+
+    public ArrayList<EdificioCentroMando> getEdificioCentroMando() {
+        return edificioCentroMando;
+    }
     
     public void guardarEdificiosRecursos(int edificio){
         FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();  
@@ -56,8 +61,7 @@ public class Jugador1 {
         switch(jugador.getRaza()){
             case 1://ballas
                 ballas.getBallas(edificio).crearEdificacionRecursos();
-                EdificioRecurso edificio1 = ballas.getBallas(edificio).getInstance();
-                edificio1.edificioRecurso.add(edificio1);
+                EdificioRecurso edificio1 = ballas.getBallas(edificio).getInstance();                
                 jugador.getEdificacionRecurso().add(edificio1);
                 break;
             case 2://Families
@@ -67,9 +71,32 @@ public class Jugador1 {
                 break;
             case 3://Vagos
                 vagos.getVagos(edificio).crearEdificacionRecursos();
-                EdificioRecurso edificio3 = vagos.getVagos(edificio).getInstance();
-                edificio3.edificioRecurso.add(edificio3);
+                EdificioRecurso edificio3 = vagos.getVagos(edificio).getInstance();                
                 jugador.getEdificacionRecurso().add(edificio3);
+                break;
+        }
+    }
+    
+    public void guardarCentroMando(){
+        FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();  
+        FactoryVagosEdificaciones vagos = new FactoryVagosEdificaciones();   
+        FactoryFamiliesEdificaciones families = new FactoryFamiliesEdificaciones();
+        ArrayList<EdificioRecurso> aux = new ArrayList<>();
+        switch(jugador.getRaza()){
+            case 1://ballas
+                ballas.getBallas(7).crearCentroMando();
+                EdificioCentroMando edificio1 = ballas.getBallas(7).getInstance2();
+                jugador.getEdificioCentroMando().add(edificio1);
+                break;
+            case 2://Families
+                families.getFamilies(7).crearCentroMando();
+                EdificioCentroMando edificio2 = families.getFamilies(7).getInstance2();
+                jugador.getEdificioCentroMando().add(edificio2);
+                break;
+            case 3://Vagos
+                vagos.getVagos(7).crearCentroMando();
+                EdificioCentroMando edificio3 = vagos.getVagos(7).getInstance2();
+                jugador.getEdificioCentroMando().add(edificio3);
                 break;
         }
     }

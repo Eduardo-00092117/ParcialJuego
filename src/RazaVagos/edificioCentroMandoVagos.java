@@ -1,5 +1,5 @@
 
-package Vagos;
+package RazaVagos;
 import Raza.*;
 import EdificacionCentroMando.*;
 import EdificacionRecurso.EdificioRecurso;
@@ -11,7 +11,8 @@ import EdificacionRecurso.EdificioRecurso;
 public class edificioCentroMandoVagos implements Razas{    
     private static EdificioCentroMando edificio = new EdificioCentroMando();
     
-    public static EdificioCentroMando getInstance2(){
+    @Override
+    public EdificioCentroMando getInstance2(){
         return edificio;
     }
     

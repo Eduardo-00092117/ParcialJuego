@@ -1,6 +1,7 @@
 
 package Raza;
 
+import EdificacionCentroMando.EdificioCentroMando;
 import EdificacionRecurso.EdificioRecurso;
 
 /**
@@ -12,4 +13,5 @@ public interface Razas {
     public void crearEdificacionEntrenamiento();
     public void crearCentroMando();
     public EdificioRecurso getInstance();
+    public EdificioCentroMando getInstance2();
 }

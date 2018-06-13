@@ -1,4 +1,4 @@
-package Ballas;
+package RazaBallas;
 
 import Raza.AbstracFactory;
 import Raza.Razas;
@@ -18,7 +18,7 @@ public class FactoryBallasEdificaciones implements AbstracFactory {
                 return new edificioBallasRecursos2();
             case 3:
                 return new edificioBallasRecursos3();
-            case 4:
+            case 7:
                 return new edificioCentroMandoBallas();
         }
         return null;

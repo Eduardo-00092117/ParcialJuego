@@ -1,5 +1,6 @@
 
-package Ballas;
+package RazaBallas;
+import EdificacionCentroMando.EdificioCentroMando;
 import Raza.*;
 import EdificacionEntrenamiento.*;
 import EdificacionRecurso.EdificioRecurso;
@@ -12,7 +13,7 @@ public class edificioBallasEntrenamiento implements Razas{
     
     private static EdificioEntrenamiento edificio = new EdificioEntrenamiento();
     
-    public static EdificioEntrenamiento getInstance2(){
+    public static EdificioEntrenamiento getInstance3(){
         return edificio;
     }
     
@@ -35,5 +36,10 @@ public class edificioBallasEntrenamiento implements Razas{
     
     @Override
     public void crearCentroMando() {}
+
+    @Override
+    public EdificioCentroMando getInstance2() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

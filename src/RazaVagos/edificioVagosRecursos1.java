@@ -1,14 +1,14 @@
 
-package Vagos;
-import EdificacionEntrenamiento.EdificioEntrenamiento;
-import EdificacionRecurso.EdificioRecurso;
+package RazaVagos;
+import EdificacionCentroMando.EdificioCentroMando;
+import EdificacionRecurso.*;
 import Raza.*;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class edificioVagosRecursos3 implements Razas{
+public class edificioVagosRecursos1 implements Razas{
     private static EdificioRecurso edificio = new EdificioRecurso();
     
     public EdificioRecurso getInstance(){
@@ -17,7 +17,7 @@ public class edificioVagosRecursos3 implements Razas{
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Cuartel real academia"); 
+        edificio.setNombre("Cuartel capital"); 
         edificio.setMontoActual(1000);
         edificio.setRaza("Vagos");
         edificio.setVida(100);
@@ -29,4 +29,9 @@ public class edificioVagosRecursos3 implements Razas{
     
     @Override
     public void crearCentroMando() {}
+
+    @Override
+    public EdificioCentroMando getInstance2() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

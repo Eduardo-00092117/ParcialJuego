@@ -1,5 +1,5 @@
 
-package Ballas;
+package RazaBallas;
 
 import Milicia.AbstracFactory;
 import Raza.Razas;

@@ -1,4 +1,4 @@
-package Families;
+package RazaFamilies;
 
 import Raza.AbstracFactory;
 import Raza.*;
@@ -23,7 +23,7 @@ public class FactoryFamiliesEdificaciones implements AbstracFactory {
                 return new edificioFamiliesRecursos2();
             case 3:
                 return new edificioFamiliesRecursos3();
-            case 4:
+            case 7:
                 return new edificioCentroMandoFamilies();
 
         }

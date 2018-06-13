@@ -19,6 +19,7 @@ public class Menu {
         System.out.print("Que raza desea seleccionar (1- Ballas, 2- Families, 3-Vagos): ");
         raza = leer.nextInt();
         jugador1.setRaza(raza);
+        jugador1.guardarCentroMando();
     }
 
     public void menuEdificaciones() {

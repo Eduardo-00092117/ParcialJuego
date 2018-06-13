@@ -1,5 +1,5 @@
 
-package Vagos;
+package RazaFamilies;
 
 import Raza.Razas;
 import Vehiculos.AbstracFactory;
@@ -8,7 +8,7 @@ import Vehiculos.AbstracFactory;
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class FactoryVagosVehiculo implements AbstracFactory{
+public class FactoryFamiliesVehiculo implements AbstracFactory{
 
     @Override
     public Razas getBallasVehiculo(int opc) {

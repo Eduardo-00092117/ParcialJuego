@@ -9,6 +9,8 @@ import java.util.*;
 public class EdificioCentroMando implements CentroMandoPlan{
     public String nombre, raza;
     public int vida, capacidad1, capacidad2, capacidad3;
+    
+    public ArrayList<EdificioCentroMando> edificioCentroMando = new ArrayList<>();
 
     @Override
     public void setNombre(String nombre) {

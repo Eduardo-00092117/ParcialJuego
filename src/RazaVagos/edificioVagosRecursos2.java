@@ -1,6 +1,6 @@
 
-package Families;
-import EdificacionEntrenamiento.EdificioEntrenamiento;
+package RazaVagos;
+import EdificacionCentroMando.EdificioCentroMando;
 import EdificacionRecurso.EdificioRecurso;
 import Raza.*;
 
@@ -8,7 +8,7 @@ import Raza.*;
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class edificioFamiliesRecursos3 implements Razas{
+public class edificioVagosRecursos2 implements Razas{
     private static EdificioRecurso edificio = new EdificioRecurso();
     
     public EdificioRecurso getInstance(){
@@ -17,9 +17,9 @@ public class edificioFamiliesRecursos3 implements Razas{
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Cuartel real academia"); 
+        edificio.setNombre("Cuartel de la fuerzas armadas"); 
         edificio.setMontoActual(1000);
-        edificio.setRaza("Families");
+        edificio.setRaza("Vagos");
         edificio.setVida(100);
         edificio.setCapacidad(10000);
     }
@@ -29,4 +29,9 @@ public class edificioFamiliesRecursos3 implements Razas{
     
     @Override
     public void crearCentroMando() {}
+
+    @Override
+    public EdificioCentroMando getInstance2() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

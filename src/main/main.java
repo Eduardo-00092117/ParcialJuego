@@ -2,10 +2,7 @@
 package main;
 
 import Jugadores.Jugador1;
-import Ballas.*;
-import Families.*;
 import Jugadores.Partida;
-import Vagos.*;
 
 import java.util.*;
 

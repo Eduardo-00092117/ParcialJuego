@@ -1,17 +1,17 @@
 
-package Ballas;
+package RazaFamilies;
+import EdificacionCentroMando.EdificioCentroMando;
 import EdificacionEntrenamiento.EdificioEntrenamiento;
 import EdificacionRecurso.EdificioRecurso;
-import Raza.Razas;
+import Raza.*;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class edificioBallasRecursos3 implements Razas{
+public class edificioFamiliesRecursos3 implements Razas{
     private static EdificioRecurso edificio = new EdificioRecurso();
     
-    @Override
     public EdificioRecurso getInstance(){
         return edificio;
     }
@@ -20,7 +20,7 @@ public class edificioBallasRecursos3 implements Razas{
     public void crearEdificacionRecursos() {
         edificio.setNombre("Cuartel real academia"); 
         edificio.setMontoActual(1000);
-        edificio.setRaza("Ballas");
+        edificio.setRaza("Families");
         edificio.setVida(100);
         edificio.setCapacidad(10000);
     }
@@ -30,4 +30,9 @@ public class edificioBallasRecursos3 implements Razas{
     
     @Override
     public void crearCentroMando() {}
+
+    @Override
+    public EdificioCentroMando getInstance2() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
