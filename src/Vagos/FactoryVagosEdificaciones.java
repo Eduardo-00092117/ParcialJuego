@@ -1,6 +1,7 @@
 
 package Vagos;
 
+import Ballas.edificioCentroMandoBallas;
 import Raza.AbstracFactory;
 import Raza.*;
 
@@ -29,6 +30,8 @@ public class FactoryVagosEdificaciones implements AbstracFactory{
                 return new edificioVagosRecursos2();
             case 3:
                 return new edificioVagosRecursos3();
+            case 4:
+                return new edificioCentroMandoBallas();
 
         }
         return null;

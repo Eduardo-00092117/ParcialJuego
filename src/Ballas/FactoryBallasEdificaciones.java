@@ -18,6 +18,8 @@ public class FactoryBallasEdificaciones implements AbstracFactory {
                 return new edificioBallasRecursos2();
             case 3:
                 return new edificioBallasRecursos3();
+            case 4:
+                return new edificioCentroMandoBallas();
         }
         return null;
     }

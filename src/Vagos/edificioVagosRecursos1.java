@@ -1,6 +1,5 @@
 
 package Vagos;
-import EdificacionEntrenamiento.EdificioEntrenamiento;
 import EdificacionRecurso.*;
 import Raza.*;
 
@@ -11,7 +10,7 @@ import Raza.*;
 public class edificioVagosRecursos1 implements Razas{
     private static EdificioRecurso edificio = new EdificioRecurso();
     
-    public static EdificioRecurso getInstance(){
+    public EdificioRecurso getInstance(){
         return edificio;
     }
 
@@ -26,4 +25,7 @@ public class edificioVagosRecursos1 implements Razas{
 
     @Override
     public void crearEdificacionEntrenamiento() {}
+    
+    @Override
+    public void crearCentroMando() {}
 }

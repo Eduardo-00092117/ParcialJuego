@@ -1,6 +1,5 @@
 
 package Ballas;
-import EdificacionEntrenamiento.EdificioEntrenamiento;
 import EdificacionRecurso.EdificioRecurso;
 import Raza.Razas;
 
@@ -9,9 +8,10 @@ import Raza.Razas;
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
 public class edificioBallasRecursos1 implements Razas{
-    private static EdificioRecurso edificio = new EdificioRecurso();
+    public static EdificioRecurso edificio = new EdificioRecurso();
     
-    public static EdificioRecurso getInstance(){
+    @Override
+    public EdificioRecurso getInstance(){
         return edificio;
     }
 
@@ -26,5 +26,8 @@ public class edificioBallasRecursos1 implements Razas{
 
     @Override
     public void crearEdificacionEntrenamiento() {}
+
+    @Override
+    public void crearCentroMando() {}
 
 }

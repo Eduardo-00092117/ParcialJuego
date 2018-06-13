@@ -1,16 +1,16 @@
 
-package Vehiculos;
+package Milicia;
 import java.util.*;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
-public class Vehiculos implements VehiculoPlan{
+public class Milicias implements MiliciaPlan{
     public String tipoNombre, tipoRaza;
     public int tiempo, vida, ataque, recurso1, recurso2, costo1, costo2;
     
-    public ArrayList<Vehiculos> vehiculo = new ArrayList<>();
+    public ArrayList<Milicias> milicia = new ArrayList<>();
 
     @Override
     public void setTipoNombre(String tipo) {

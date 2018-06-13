@@ -11,7 +11,7 @@ import Raza.*;
 public class edificioVagosRecursos3 implements Razas{
     private static EdificioRecurso edificio = new EdificioRecurso();
     
-    public static EdificioRecurso getInstance(){
+    public EdificioRecurso getInstance(){
         return edificio;
     }
 
@@ -26,4 +26,7 @@ public class edificioVagosRecursos3 implements Razas{
 
     @Override
     public void crearEdificacionEntrenamiento() {}
+    
+    @Override
+    public void crearCentroMando() {}
 }

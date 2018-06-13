@@ -11,6 +11,7 @@ public class EdificioRecurso implements RecursosPlan{
     public int capacidad, vida, montoActual, tiempo;
     
     public ArrayList<EdificioRecurso> edificioRecurso = new ArrayList<>();
+   
     
     @Override
     public void setNombre(String nombre) {

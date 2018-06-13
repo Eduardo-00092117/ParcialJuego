@@ -23,6 +23,8 @@ public class FactoryFamiliesEdificaciones implements AbstracFactory {
                 return new edificioFamiliesRecursos2();
             case 3:
                 return new edificioFamiliesRecursos3();
+            case 4:
+                return new edificioCentroMandoFamilies();
 
         }
         return null;
