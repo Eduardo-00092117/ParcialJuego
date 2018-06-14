@@ -18,13 +18,8 @@ public class Partida {
     public void Iniciar(){
         Menu menu = new Menu();
         menu.menuEleccion();
-        turnos();
-        /*menu.menuEdificacionesJugador1();
+        menu.turnos();
+        /*menu.menuEdificaciones();
         menu.menuEdificacionesJugador2();*/  
-    }
-    
-    public void turnos(){
-        Menu menu = new Menu();
-        menu.menuCompletoJugador1();
     }
 }

@@ -12,22 +12,21 @@ import EdificacionEntrenamiento.*;
 import EdificacionRecurso.*;
 import EdificacionVehiculo.*;
 import EdificacionCentroMando.EdificioCentroMando;
+import Milicia.Milicias;
+import RazaBallas.FactoryBallasMilicia;
+import RazaFamilies.FactoryFamiliesMilicia;
+import RazaVagos.FactoryVagosMilicia;
 import java.util.*;
 
-public class Jugador1 {
-    private static Jugador1 jugador = new Jugador1();
-    public static Jugador1 getInstance(){
-        if(jugador == null){
-            jugador = new Jugador1();
-        }
-        return jugador;
-    }
-    
+public class Jugador1 {    
     private ArrayList<EdificioRecurso> edificacionRecurso = new ArrayList<>();
     private ArrayList<EdificioEntrenamiento> edificioEntrenamiento = new ArrayList<>();
     private ArrayList<EdificioVehiculo> edificioVehiculo = new ArrayList<>();
     private ArrayList<EdificioCentroMando> edificioCentroMando = new ArrayList<>();
+    
     private int raza;
+    private int raza2;
+    private String nombre;
 
     public ArrayList<EdificioRecurso> getEdificacionRecurso() {
         return edificacionRecurso;
@@ -49,11 +48,27 @@ public class Jugador1 {
         this.raza = raza;
     }
 
+    public int getRaza2() {
+        return raza2;
+    }
+
+    public void setRaza2(int raza2) {
+        this.raza2 = raza2;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre1) {
+        this.nombre = nombre1;
+    }    
+
     public ArrayList<EdificioCentroMando> getEdificioCentroMando() {
         return edificioCentroMando;
     }
     
-    public void guardarEdificiosRecursos(int edificio){
+    public void guardarEdificiosRecursos(int edificio, Jugador1 jugador){
         FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();  
         FactoryVagosEdificaciones vagos = new FactoryVagosEdificaciones();   
         FactoryFamiliesEdificaciones families = new FactoryFamiliesEdificaciones();
@@ -76,7 +91,7 @@ public class Jugador1 {
         }
     }
     
-    public void guardarCentroMando(){
+    public void guardarCentroMando(Jugador1 jugador){
         FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();  
         FactoryVagosEdificaciones vagos = new FactoryVagosEdificaciones();   
         FactoryFamiliesEdificaciones families = new FactoryFamiliesEdificaciones();
@@ -99,7 +114,7 @@ public class Jugador1 {
         }
     }
     
-    public void guardarEdificioEntrenamiento(){
+    public void guardarEdificioEntrenamiento(Jugador1 jugador){
         FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();  
         FactoryVagosEdificaciones vagos = new FactoryVagosEdificaciones();   
         FactoryFamiliesEdificaciones families = new FactoryFamiliesEdificaciones();
@@ -122,7 +137,7 @@ public class Jugador1 {
         }
     }
     
-    public void guardarEdificioVehiculo(int edificio){
+    public void guardarEdificioVehiculo(int edificio, Jugador1 jugador){
         FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();  
         FactoryVagosEdificaciones vagos = new FactoryVagosEdificaciones();   
         FactoryFamiliesEdificaciones families = new FactoryFamiliesEdificaciones();
@@ -141,6 +156,29 @@ public class Jugador1 {
                 vagos.getVagos(edificio).crearEdificacionVehiculo();
                 EdificioVehiculo edificio3 = vagos.getVagos(edificio).getInstance4();                
                 jugador.getEdificioVehiculo().add(edificio3);
+                break;
+        }
+    }
+    
+    public void guardarMilicia(int edificio, int tipoSoldado, Jugador1 jugador){
+        FactoryBallasMilicia ballas = new FactoryBallasMilicia();  
+        FactoryVagosMilicia vagos = new FactoryVagosMilicia();   
+        FactoryFamiliesMilicia families = new FactoryFamiliesMilicia();
+        switch(jugador.getRaza()){
+            case 1://ballas
+                ballas.getBallasMilicia(tipoSoldado).crearMilicia();
+                Milicias edificio1 = ballas.getBallasMilicia(tipoSoldado).getInstance();                
+                jugador.getEdificioEntrenamiento().get(edificio).getSoldados().add(edificio1);
+                break;
+            case 2://Families
+                families.getFamiliesMilicia(tipoSoldado).crearMilicia();
+                Milicias edificio2 = families.getFamiliesMilicia(tipoSoldado).getInstance();                
+                jugador.getEdificioEntrenamiento().get(edificio).getSoldados().add(edificio2);
+                break;
+            case 3://Vagos
+                vagos.getVagosMilicia(tipoSoldado).crearMilicia();
+                Milicias edificio3 = families.getFamiliesMilicia(tipoSoldado).getInstance();                
+                jugador.getEdificioEntrenamiento().get(edificio).getSoldados().add(edificio3);
                 break;
         }
     }

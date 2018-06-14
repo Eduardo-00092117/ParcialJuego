@@ -2,7 +2,9 @@
 package RazaFamilies;
 
 import Milicia.AbstracFactory;
-import Raza.Razas;
+import Milicia.Milicia;
+import RazaBallas.EspecialistaBalla;
+import RazaBallas.SoldadoBalla;
 
 /**
  *
@@ -11,18 +13,24 @@ import Raza.Razas;
 public class FactoryFamiliesMilicia implements AbstracFactory{
 
     @Override
-    public Razas getBallasMilicia(int opc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Milicia getBallasMilicia(int opc) {
+        return null;
     }
 
     @Override
-    public Razas getFamiliesMilicia(int opc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Milicia getFamiliesMilicia(int opc) {
+        switch(opc){
+            case 1:
+                return new SoldadoFamilies();
+            case 2:
+                return new EspecialistaFamilies();
+        }
+        return null;
     }
 
     @Override
-    public Razas getVagosMilicia(int opc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Milicia getVagosMilicia(int opc) {
+        return null;
     }
     
 }
