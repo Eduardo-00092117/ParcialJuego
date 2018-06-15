@@ -1,8 +1,8 @@
 
 package RazaVagos;
 
-import Raza.Razas;
 import Vehiculos.AbstracFactory;
+import Vehiculos.Vehiculo;
 
 /**
  *
@@ -11,18 +11,24 @@ import Vehiculos.AbstracFactory;
 public class FactoryVagosVehiculo implements AbstracFactory{
 
     @Override
-    public Razas getBallasVehiculo(int opc) {
+    public Vehiculo getBallasVehiculo(int opc) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Razas getFamiliesVehiculo(int opc) {
+    public Vehiculo getFamiliesVehiculo(int opc) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Razas getVagosVehiculo(int opc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Vehiculo getVagosVehiculo(int opc) {
+        switch(opc){
+            case 1:
+                return new VehiculoVagos1();
+            case 2:
+                return new VehiculoVagos2();
+        }
+        return null;
     }
     
 }

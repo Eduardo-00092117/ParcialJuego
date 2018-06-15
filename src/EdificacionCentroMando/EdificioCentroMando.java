@@ -41,7 +41,7 @@ public class EdificioCentroMando implements CentroMandoPlan{
 
     @Override
     public int[] getCapacidad() {
-        int[] capacidad = new int[2];
+        int[] capacidad = new int[3];
         capacidad[0] = this.capacidad1;
         capacidad[1] = this.capacidad2;
         capacidad[2] = this.capacidad3;
@@ -57,7 +57,7 @@ public class EdificioCentroMando implements CentroMandoPlan{
 
     @Override
     public int[] getMontoRecurso() {
-        int[] recurso = new int[2];
+        int[] recurso = new int[3];
         recurso[0] = this.recurso1;
         recurso[1] = this.recurso2;
         recurso[2] = this.recurso3;

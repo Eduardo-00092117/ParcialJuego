@@ -16,9 +16,7 @@ public class Partida {
     }
     
     public void Iniciar(){
-        Menu menu = new Menu();
-        menu.menuEleccion();
-        menu.turnos();
+
         /*menu.menuEdificaciones();
         menu.menuEdificacionesJugador2();*/  
     }

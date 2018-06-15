@@ -17,6 +17,7 @@ public interface VehiculoPlan {
     public void setCosto1(int recurso, int costo1);
     public void setCosto2(int recurso, int costo2);
     public void setTiempo(int tiempo);
+    public void setEdificio(int edificio);
     
     public String getNombre();
     public int getVida();
@@ -26,4 +27,5 @@ public interface VehiculoPlan {
     public int[] getCosto2();
     public int getTiempo();
     public ArrayList<Vehiculos> getVehiculo(); 
+    public int getEdificio();
 }

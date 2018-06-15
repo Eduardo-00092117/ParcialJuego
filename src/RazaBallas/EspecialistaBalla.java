@@ -19,7 +19,7 @@ public class EspecialistaBalla implements Milicia{
     
     @Override
     public void crearMilicia() {
-        milicia.setTipoNombre("Especialista balla");
+        milicia.setTipoNombre("Especialista ballas");
         milicia.setAtaque(50);
         milicia.setCosto1(2, 100);
         milicia.setCosto1(1, 200);

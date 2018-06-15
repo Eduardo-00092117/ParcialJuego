@@ -7,4 +7,5 @@ package Vehiculos;
  */
 public interface Vehiculo {
     public void crearVehiculos();
+    public Vehiculos getInstance();
 }

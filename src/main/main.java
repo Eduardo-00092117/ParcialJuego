@@ -1,10 +1,7 @@
 
 package main;
 
-import Jugadores.Jugador1;
-import Jugadores.Partida;
-
-import java.util.*;
+import Jugadores.Menu;
 
 /**
  *
@@ -12,7 +9,8 @@ import java.util.*;
  */
 public class main {
     public static void main(String[] args) {          
-        Partida inicio = Partida.getInstance();
-        inicio.Iniciar();
+        Menu menu = new Menu();
+        menu.menuEleccion();
+        menu.turnos();
     }
 }

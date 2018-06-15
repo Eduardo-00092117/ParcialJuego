@@ -87,7 +87,7 @@ public class EdificioRecurso implements RecursosPlan {
 
     @Override
     public int[] getCosto1() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso1;
         costo[1] = this.costo1;
         return costo;
@@ -95,7 +95,7 @@ public class EdificioRecurso implements RecursosPlan {
 
     @Override
     public int[] getCosto2() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso2;
         costo[1] = this.costo2;
         return costo;

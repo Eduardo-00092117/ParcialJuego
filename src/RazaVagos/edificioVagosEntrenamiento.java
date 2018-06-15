@@ -1,6 +1,6 @@
 
 package RazaVagos;
-import RazaBallas.*;
+
 import EdificacionCentroMando.EdificioCentroMando;
 import Raza.*;
 import EdificacionEntrenamiento.*;

@@ -1,6 +1,8 @@
 
 package Milicia;
 
+import EdificacionEntrenamiento.EdificioEntrenamiento;
+
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>

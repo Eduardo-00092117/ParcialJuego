@@ -1,5 +1,6 @@
 
 package Milicia;
+
 import java.util.*;
 
 /**
@@ -9,6 +10,7 @@ import java.util.*;
 public class Milicias implements MiliciaPlan{
     public String tipoNombre, tipoRaza;
     public int tiempo, vida, ataque, recurso1, recurso2, costo1, costo2;
+    public int entrenamiento;
     
     public ArrayList<Milicias> milicia = new ArrayList<>();
 
@@ -76,7 +78,7 @@ public class Milicias implements MiliciaPlan{
 
     @Override
     public int[] getCosto1() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso1;
         costo[1] = this.costo1;
         return costo;
@@ -84,11 +86,10 @@ public class Milicias implements MiliciaPlan{
 
     @Override
     public int[] getCosto2() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso2;
         costo[1] = this.costo2;
         return costo;
     }
-
     
 }

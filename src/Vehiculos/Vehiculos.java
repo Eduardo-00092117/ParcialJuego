@@ -1,5 +1,6 @@
 
 package Vehiculos;
+import EdificacionVehiculo.EdificioVehiculo;
 import java.util.*;
 
 /**
@@ -9,6 +10,7 @@ import java.util.*;
 public class Vehiculos implements VehiculoPlan{
     public String tipoNombre, tipoRaza;
     public int tiempo, vida, ataque, recurso1, recurso2, costo1, costo2;
+    EdificioVehiculo edificio;
     
     public ArrayList<Vehiculos> vehiculo = new ArrayList<>();
 
@@ -65,7 +67,7 @@ public class Vehiculos implements VehiculoPlan{
     }
 
     @Override
-    public int setVida() {
+    public int getVida() {
         return this.vida;
     }
 
@@ -88,6 +90,16 @@ public class Vehiculos implements VehiculoPlan{
         costo[0] = this.recurso2;
         costo[1] = this.costo2;
         return costo;
+    }
+
+    @Override
+    public void setEdificio(EdificioVehiculo Edificio) {
+        this.edificio = Edificio;
+    }
+
+    @Override
+    public EdificioVehiculo getEdificio() {
+        return this.edificio;
     }
 
     

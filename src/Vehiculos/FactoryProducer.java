@@ -4,22 +4,19 @@ package Vehiculos;
 import RazaVagos.FactoryVagosVehiculo;
 import RazaFamilies.FactoryFamiliesVehiculo;
 import RazaBallas.FactoryBallasVehiculo;
-import RazaVagos.FactoryVagosMilicia;
-import RazaFamilies.FactoryFamiliesMilicia;
-import RazaBallas.FactoryBallasMilicia;
 
 /**
  *
  * @author Eduardo Alberto López Torres <Carnet: 00092117>
  */
 public class FactoryProducer{
-    public AbstracFactory getVehiculo(String type){
+    public static AbstracFactory getVehiculo(int type){
         switch(type){
-            case "Ballas":
+            case 1:
                 return new FactoryBallasVehiculo();
-            case "Families":
+            case 2:
                 return new FactoryFamiliesVehiculo();
-            case "Vagos":
+            case 3:
                 return new FactoryVagosVehiculo();
         }
         return null;

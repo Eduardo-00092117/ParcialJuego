@@ -28,6 +28,7 @@ public class edificioBallasVehiculo1 implements Razas{
         edificio.setCosto2(3, 600);
         edificio.setTipo("bus");
         edificio.setVida(600);
+        edificio.setEdificio(1);
     }
     
     @Override

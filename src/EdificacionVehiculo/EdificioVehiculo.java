@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class EdificioVehiculo implements VehiculoPlan{
     public String nombre, raza, tipoVehiculo;
-    public int costo1, costo2, recurso1, recurso2, vida, tiempo;
+    public int costo1, costo2, recurso1, recurso2, vida, tiempo, edificio;
     
     public ArrayList<EdificioVehiculo> edificioVehiculo = new ArrayList<>();
     public ArrayList<Vehiculos> Vehiculo = new ArrayList<>();
@@ -58,7 +58,7 @@ public class EdificioVehiculo implements VehiculoPlan{
 
     @Override
     public int[] getCosto1() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso1;
         costo[1] = this.costo1;
         return costo;
@@ -66,7 +66,7 @@ public class EdificioVehiculo implements VehiculoPlan{
 
     @Override
     public int[] getCosto2() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso2;
         costo[1] = this.costo2;
         return costo;
@@ -95,5 +95,15 @@ public class EdificioVehiculo implements VehiculoPlan{
     @Override
     public ArrayList<Vehiculos> getVehiculo() {
         return this.Vehiculo;
+    }
+
+    @Override
+    public void setEdificio(int edificio) {
+        this.edificio = edificio;
+    }
+
+    @Override
+    public int getEdificio() {
+        return this.edificio;
     }
 }

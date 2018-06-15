@@ -12,7 +12,6 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
     public int costo1, costo2, recurso1, recurso2, vida, tiempo;
     
     public ArrayList<EdificioEntrenamiento> edificioEntrenamiento = new ArrayList<>();
-    public ArrayList<Milicias> Milicia = new ArrayList<>();
 
     @Override
     public void setNombre(String nombre) {
@@ -58,7 +57,7 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
 
     @Override
     public int[] getCosto1() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso1;
         costo[1] = this.costo1;
         return costo;
@@ -66,7 +65,7 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
 
     @Override
     public int[] getCosto2() {
-        int[] costo = new int[1];
+        int[] costo = new int[2];
         costo[0] = this.recurso2;
         costo[1] = this.costo2;
         return costo;
@@ -80,10 +79,5 @@ public class EdificioEntrenamiento implements EntrenamientoPlan{
     @Override
     public int getTiempo() {
         return this.tiempo;
-    }
-
-    @Override
-    public ArrayList<Milicias> getSoldados() {
-        return this.Milicia;
     }
 }
