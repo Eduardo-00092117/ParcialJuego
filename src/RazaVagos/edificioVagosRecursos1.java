@@ -24,6 +24,7 @@ public class edificioVagosRecursos1 implements Razas{
         edificio.setRaza("Vagos");
         edificio.setVida(700);
         edificio.setCapacidad(10000);
+        edificio.setTiempo(5);
     }
 
     @Override

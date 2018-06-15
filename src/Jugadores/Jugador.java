@@ -238,8 +238,6 @@ public class Jugador {
                     System.out.println("Nombre: " + jugador.getEdificacionRecurso().get(i).getNombre());
                     System.out.println("Vida: " + jugador.getEdificacionRecurso().get(i).getVida());
                     System.out.println("Monto Actual: " + jugador.getEdificacionRecurso().get(i).getMontoActual());
-                    System.out.println("Recurso: " + jugador.getEdificacionRecurso().get(i).getCosto1()[0]);
-                    System.out.println("Recurso: " + jugador.getEdificacionRecurso().get(i).getCosto1()[1]);
                 }
             }
         }

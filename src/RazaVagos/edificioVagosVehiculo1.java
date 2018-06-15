@@ -27,6 +27,7 @@ public class edificioVagosVehiculo1 implements Razas{
         edificio.setCosto1(1, 400);
         edificio.setCosto2(3, 600);
         edificio.setVida(700);
+        edificio.setTiempo(4);
     }
     
     @Override

@@ -24,6 +24,7 @@ public class edificioFamiliesRecursos1 implements Razas{
         edificio.setRaza("Families");
         edificio.setVida(600);
         edificio.setCapacidad(10000);
+        edificio.setTiempo(3);
     }
 
     @Override
