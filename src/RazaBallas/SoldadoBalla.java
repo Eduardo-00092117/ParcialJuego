@@ -24,7 +24,7 @@ public class SoldadoBalla implements Milicia{
         milicia.setCosto1(2, 100);
         milicia.setCosto1(1, 200);
         milicia.setTipoRaza("Ballas");
-        milicia.setVida(0);
+        milicia.setVida(450);
         milicia.setTiempo(2);
     }    
 }

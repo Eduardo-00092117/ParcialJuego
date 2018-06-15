@@ -20,10 +20,10 @@ public class VehiculoFamilies2 implements Vehiculo{
     public void crearVehiculos() {
         vehiculo.setTipoNombre("Carro de policia");
         vehiculo.setTipoRaza("Families");
-        vehiculo.setVida(0);
-        vehiculo.setTiempo(0);
-        vehiculo.setCosto1(0, 0);
-        vehiculo.setCosto2(0, 0);
-        vehiculo.setAtaque(0);
+        vehiculo.setVida(450);
+        vehiculo.setTiempo(2);
+        vehiculo.setCosto1(2, 300);
+        vehiculo.setCosto2(3, 300);
+        vehiculo.setAtaque(50);
     }
 }

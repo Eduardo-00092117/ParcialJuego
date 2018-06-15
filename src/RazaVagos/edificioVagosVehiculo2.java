@@ -22,12 +22,11 @@ public class edificioVagosVehiculo2 implements Razas{
     
     @Override
     public void crearEdificacionVehiculo() {
-        edificio.setNombre("Bus 44");
+        edificio.setNombre("Cochera drive view (Carro de misil)");
         edificio.setRaza("Vagos"); 
-        edificio.setCosto1(1, 400);
+        edificio.setCosto1(2, 800);
         edificio.setCosto2(3, 600);
-        edificio.setTipo("bus normal");
-        edificio.setVida(600);
+        edificio.setVida(500);
     }
     
     @Override

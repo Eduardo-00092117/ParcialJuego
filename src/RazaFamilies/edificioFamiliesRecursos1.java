@@ -19,11 +19,11 @@ public class edificioFamiliesRecursos1 implements Razas{
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Banco nacional de Europa"); 
+        edificio.setNombre("CASA DEL EURO"); 
         edificio.setMontoActual(0);
         edificio.setRaza("Families");
-        edificio.setVida(400);
-        edificio.setCapacidad(40000);
+        edificio.setVida(600);
+        edificio.setCapacidad(10000);
     }
 
     @Override

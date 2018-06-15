@@ -19,13 +19,13 @@ public class VehiculoBallas1 implements Vehiculo {
     public void crearVehiculos() {
         FactoryBallasEdificaciones ballas = new FactoryBallasEdificaciones();
         ballas.getBallas(5).crearEdificacionVehiculo();
-        vehiculo.setTipoNombre("Tractor a chorros");
+        vehiculo.setTipoNombre("Tractor");
         vehiculo.setTipoRaza("Ballas");
-        vehiculo.setVida(0);
-        vehiculo.setTiempo(0);
-        vehiculo.setCosto1(0, 0);
-        vehiculo.setCosto2(0, 0);
-        vehiculo.setAtaque(0);
+        vehiculo.setVida(450);
+        vehiculo.setTiempo(3);
+        vehiculo.setCosto1(1, 100);
+        vehiculo.setCosto2(2, 300);
+        vehiculo.setAtaque(100);
         vehiculo.setEdificio(ballas.getBallas(5).getInstance4());
     }
 }

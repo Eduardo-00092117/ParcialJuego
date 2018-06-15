@@ -28,12 +28,12 @@ public class edificioVagosEntrenamiento implements Razas{
 
     @Override
     public void crearEdificacionEntrenamiento() {
-        edificio.setNombre("Fortaleza flotante");
+        edificio.setNombre("Fortaleza de mexico");
         edificio.setRaza("Vagos"); 
-        edificio.setTiempo(2);
-        edificio.setVida(200);
-        edificio.setCosto1(2, 200);
-        edificio.setCosto2(3, 300);
+        edificio.setTiempo(4);
+        edificio.setVida(600);
+        edificio.setCosto1(2, 800);
+        edificio.setCosto2(1, 400);
     }
     
     @Override

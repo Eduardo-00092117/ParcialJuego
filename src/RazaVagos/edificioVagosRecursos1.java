@@ -19,10 +19,10 @@ public class edificioVagosRecursos1 implements Razas{
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Cuartel capital"); 
-        edificio.setMontoActual(1000);
+        edificio.setNombre("CASA DE LEMPIRA"); 
+        edificio.setMontoActual(0);
         edificio.setRaza("Vagos");
-        edificio.setVida(100);
+        edificio.setVida(700);
         edificio.setCapacidad(10000);
     }
 

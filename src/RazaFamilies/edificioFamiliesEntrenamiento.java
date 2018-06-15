@@ -28,12 +28,12 @@ public class edificioFamiliesEntrenamiento implements Razas{
 
     @Override
     public void crearEdificacionEntrenamiento() {
-        edificio.setNombre("Santa María");
+        edificio.setNombre("Fortaleza de Santa María");
         edificio.setRaza("Families"); 
-        edificio.setTiempo(2);
+        edificio.setTiempo(4);
         edificio.setVida(900);
-        edificio.setCosto1(3, 200);
-        edificio.setCosto2(1, 100);
+        edificio.setCosto1(3, 500);
+        edificio.setCosto2(1, 400);
     }
     
     @Override

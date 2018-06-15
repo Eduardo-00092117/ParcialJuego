@@ -21,10 +21,10 @@ public class SoldadoFamilies implements Milicia{
     public void crearMilicia() {
         milicia.setTipoNombre("Soldados families");
         milicia.setAtaque(50);
-        milicia.setCosto1(2, 100);
-        milicia.setCosto1(1, 200);
+        milicia.setCosto1(2, 300);
+        milicia.setCosto1(3, 500);
         milicia.setTipoRaza("Families");
-        milicia.setVida(0);
+        milicia.setVida(100);
         milicia.setTiempo(2);
     }    
 }

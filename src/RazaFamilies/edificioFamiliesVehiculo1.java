@@ -22,10 +22,10 @@ public class edificioFamiliesVehiculo1 implements Razas{
     
     @Override
     public void crearEdificacionVehiculo() {
-        edificio.setNombre("Coster");
+        edificio.setNombre("Estacion de bomberos");
         edificio.setRaza("Families"); 
-        edificio.setCosto1(1, 400);
-        edificio.setCosto2(3, 600);
+        edificio.setCosto1(1, 600);
+        edificio.setCosto2(2, 1000);
         edificio.setTipo("bus");
         edificio.setVida(600);
     }

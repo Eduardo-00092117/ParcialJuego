@@ -18,12 +18,12 @@ public class VehiculoVagos2 implements Vehiculo{
 
     @Override
     public void crearVehiculos() {
-        vehiculo.setTipoNombre("Carro bestial");
+        vehiculo.setTipoNombre("Carro de misil");
         vehiculo.setTipoRaza("Vagos");
-        vehiculo.setVida(0);
-        vehiculo.setTiempo(0);
-        vehiculo.setCosto1(0, 0);
-        vehiculo.setCosto2(0, 0);
-        vehiculo.setAtaque(0);
+        vehiculo.setVida(500);
+        vehiculo.setTiempo(2);
+        vehiculo.setCosto1(2, 400);
+        vehiculo.setCosto2(3, 700);
+        vehiculo.setAtaque(100);
     }
 }

@@ -19,11 +19,11 @@ public class edificioFamiliesRecursos3 implements Razas{
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Cuartel real academia"); 
-        edificio.setMontoActual(1000);
+        edificio.setNombre("CASA DE LA CORONA"); 
+        edificio.setMontoActual(0);
         edificio.setRaza("Families");
-        edificio.setVida(100);
-        edificio.setCapacidad(10000);
+        edificio.setVida(400);
+        edificio.setCapacidad(3000);
     }
 
     @Override

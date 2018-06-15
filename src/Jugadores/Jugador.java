@@ -76,16 +76,19 @@ public class Jugador {
                 ballas.getBallas(edificio).crearEdificacionRecursos();
                 EdificioRecurso edificio1 = ballas.getBallas(edificio).getInstance();
                 jugador.getEdificacionRecurso().add(edificio1);
+                System.out.println("\nLa edificacion "+edificio1.getNombre()+" se construira en "+edificio1.getTiempo()+" fases");
                 break;
             case 2://Families
                 families.getFamilies(edificio).crearEdificacionRecursos();
                 EdificioRecurso edificio2 = families.getFamilies(edificio).getInstance();
                 jugador.getEdificacionRecurso().add(edificio2);
+                System.out.println("\nLa edificacion "+edificio2.getNombre()+" se construira en "+edificio2.getTiempo()+" fases");
                 break;
             case 3://Vagos
                 vagos.getVagos(edificio).crearEdificacionRecursos();
                 EdificioRecurso edificio3 = vagos.getVagos(edificio).getInstance();
                 jugador.getEdificacionRecurso().add(edificio3);
+                System.out.println("\nLa edificacion "+edificio3.getNombre()+" se construira en "+edificio3.getTiempo()+" fases");
                 break;
         }
     }
@@ -122,16 +125,19 @@ public class Jugador {
                 ballas.getBallas(4).crearEdificacionEntrenamiento();
                 EdificioEntrenamiento edificio1 = ballas.getBallas(4).getInstance3();
                 jugador.getEdificioEntrenamiento().add(edificio1);
+                System.out.println("\nLa edificacion "+edificio1.getNombre()+" se construira en "+edificio1.getTiempo()+" fases");
                 break;
             case 2://Families
                 families.getFamilies(4).crearEdificacionEntrenamiento();
                 EdificioEntrenamiento edificio2 = families.getFamilies(4).getInstance3();
                 jugador.getEdificioEntrenamiento().add(edificio2);
+                System.out.println("\nLa edificacion "+edificio2.getNombre()+" se construira en "+edificio2.getTiempo()+" fases");
                 break;
             case 3://Vagos
                 vagos.getVagos(4).crearEdificacionEntrenamiento();
                 EdificioEntrenamiento edificio3 = vagos.getVagos(4).getInstance3();
                 jugador.getEdificioEntrenamiento().add(edificio3);
+                System.out.println("\nLa edificacion "+edificio3.getNombre()+" se construira en "+edificio3.getTiempo()+" fases");
                 break;
         }
     }
@@ -145,16 +151,19 @@ public class Jugador {
                 ballas.getBallas(edificio).crearEdificacionVehiculo();
                 EdificioVehiculo edificio1 = ballas.getBallas(edificio).getInstance4();
                 jugador.getEdificioVehiculo().add(edificio1);
+                System.out.println("\nLa edificacion "+edificio1.getNombre()+" se construira en "+edificio1.getTiempo()+" fases");
                 break;
             case 2://Families
                 families.getFamilies(edificio).crearEdificacionVehiculo();
                 EdificioVehiculo edificio2 = families.getFamilies(edificio).getInstance4();
                 jugador.getEdificioVehiculo().add(edificio2);
+                System.out.println("\nLa edificacion "+edificio2.getNombre()+" se construira en "+edificio2.getTiempo()+" fases");
                 break;
             case 3://Vagos
                 vagos.getVagos(edificio).crearEdificacionVehiculo();
                 EdificioVehiculo edificio3 = vagos.getVagos(edificio).getInstance4();
                 jugador.getEdificioVehiculo().add(edificio3);
+                System.out.println("\nLa edificacion "+edificio3.getNombre()+" se construira en "+edificio3.getTiempo()+" fases");
                 break;
         }
     }
@@ -168,16 +177,19 @@ public class Jugador {
                 ballas.getBallasMilicia(tipoSoldado).crearMilicia();
                 Milicias edificio1 = ballas.getBallasMilicia(tipoSoldado).getInstance();
                 jugador.getMilicia().add(edificio1);
+                System.out.println("\nLa milicia "+edificio1.getTipoNombre()+" se entrenará en "+edificio1.getTiempo()+" fases");
                 break;
             case 2://Families
                 families.getFamiliesMilicia(tipoSoldado).crearMilicia();
                 Milicias edificio2 = families.getFamiliesMilicia(tipoSoldado).getInstance();
                 jugador.getMilicia().add(edificio2);
+                System.out.println("\nLa milicia "+edificio2.getTipoNombre()+" se entrenará en "+edificio2.getTiempo()+" fases");
                 break;
             case 3://Vagos
                 vagos.getVagosMilicia(tipoSoldado).crearMilicia();
                 Milicias edificio3 = vagos.getVagosMilicia(tipoSoldado).getInstance();
                 jugador.getMilicia().add(edificio3);
+                System.out.println("\nLa milicia "+edificio3.getTipoNombre()+" se entrenará en "+edificio3.getTiempo()+" fases");
                 break;
         }
     }
@@ -191,16 +203,19 @@ public class Jugador {
                 ballas.getBallasVehiculo(tipoVehiculo).crearVehiculos();
                 Vehiculos edificio1 = ballas.getBallasVehiculo(tipoVehiculo).getInstance();
                 jugador.getVehiculo().add(edificio1);
+                System.out.println("\nEl vehiculo "+edificio1.getTipoNombre()+" se construira en "+edificio1.getTiempo()+" fases");
                 break;
             case 2://Families
                 families.getFamiliesVehiculo(tipoVehiculo).crearVehiculos();
                 Vehiculos edificio2 = families.getFamiliesVehiculo(tipoVehiculo).getInstance();
                 jugador.getVehiculo().add(edificio2);
+                System.out.println("\nEl vehiculo "+edificio2.getTipoNombre()+" se construira en "+edificio2.getTiempo()+" fases");
                 break;
             case 3://Vagos
                 vagos.getVagosVehiculo(tipoVehiculo).crearVehiculos();
                 Vehiculos edificio3 = vagos.getVagosVehiculo(tipoVehiculo).getInstance();
                 jugador.getVehiculo().add(edificio3);
+                System.out.println("\nEl vehiculo "+edificio3.getTipoNombre()+" se construira en "+edificio3.getTiempo()+" fases");
                 break;
         }
     }
@@ -217,9 +232,9 @@ public class Jugador {
         }
 
         if (jugador.getEdificacionRecurso().size() > 0) {
-            System.out.println("////////////////// Recursos //////////////////");
             for (int i = 0; i < jugador.getEdificacionRecurso().size(); i++) {
                 if (jugador.getEdificacionRecurso().get(i).getTiempo() == 0) {
+                    System.out.println("////////////////// Recursos //////////////////");
                     System.out.println("Nombre: " + jugador.getEdificacionRecurso().get(i).getNombre());
                     System.out.println("Vida: " + jugador.getEdificacionRecurso().get(i).getVida());
                     System.out.println("Monto Actual: " + jugador.getEdificacionRecurso().get(i).getMontoActual());
@@ -230,9 +245,9 @@ public class Jugador {
         }
 
         if (jugador.getEdificioEntrenamiento().size() > 0) {
-            System.out.println("////////////////// Centro de entrenamiento //////////////////");
             for (int i = 0; i < jugador.getEdificioEntrenamiento().size(); i++) {
                 if (jugador.getEdificioEntrenamiento().get(i).getTiempo() == 0) {
+                    System.out.println("////////////////// Centro de entrenamiento //////////////////");
                     System.out.println(jugador.getEdificioEntrenamiento().get(i).getNombre());
                     System.out.println(jugador.getEdificioEntrenamiento().get(i).getVida());
                 }
@@ -240,9 +255,9 @@ public class Jugador {
         }
 
         if (jugador.getEdificioVehiculo().size() > 0) {
-            System.out.println("////////////////// Centro de creacion de vehiculos //////////////////");
             for (int i = 0; i < jugador.getEdificioVehiculo().size(); i++) {
                 if (jugador.getEdificioVehiculo().get(i).getTiempo() == 0) {
+                    System.out.println("////////////////// Centro de creacion de vehiculos //////////////////");
                     System.out.println(jugador.getEdificioVehiculo().get(i).getNombre());
                     System.out.println(jugador.getEdificioVehiculo().get(i).getVida());
                 }
@@ -253,26 +268,22 @@ public class Jugador {
 
     public void mostrarMiliciaVehiculo(Jugador jugador) {
         System.out.println("");
-        System.out.println("////////////////////Tropas/////////////////////");
         for (int j = 0; j < jugador.getMilicia().size(); j++) {
             if (jugador.getMilicia().get(j).getTiempo() == 0) {
+                System.out.println("////////////////////Tropas/////////////////////");
                 System.out.println((j + 1) + " - " + jugador.getMilicia().get(j).getTipoNombre());
                 System.out.println("Vida: " + jugador.getMilicia().get(j).getVida());
                 System.out.println("Ataque: " + jugador.getMilicia().get(j).getAtaque());
             }
         }
-        System.out.println("////////////////////////////////////////////////");
-        System.out.println("//////////////////////Vehiculos///////////////////");
         for (int j = 0; j < jugador.getVehiculo().size(); j++) {
             if (jugador.getVehiculo().get(j).getTiempo() == 0) {
+                System.out.println("//////////////////////Vehiculos///////////////////");
                 System.out.println((j + 1) + " - " + jugador.getVehiculo().get(j).getTipoNombre());
                 System.out.println("Vida: " + jugador.getVehiculo().get(j).getVida());
                 System.out.println("Ataque: " + jugador.getVehiculo().get(j).getAtaque());
             }
-
         }
-        System.out.println("///////////////////////////////////////////////////");
-
     }
 
     public void crearEdificiosFases(Jugador jugador) {

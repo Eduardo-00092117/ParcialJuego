@@ -30,9 +30,10 @@ public class edificioCentroMandoVagos implements Razas{
 
     @Override
     public void crearCentroMando() {
-        edificio.setNombre("Poderoso centro de mando Ballas");
+        edificio.setNombre("Centro de Mando - Vagos");
         edificio.setVida(1000);
         edificio.setCapacidad(10000, 5000, 3000);
+        edificio.setMontoRecurso(5000, 3000, 1000);
     }
 
     @Override

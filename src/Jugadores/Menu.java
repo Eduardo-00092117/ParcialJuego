@@ -29,7 +29,7 @@ public class Menu {
         jugador1.guardarCentroMando(jugador1);
         jugador1.setNombre(nombre);
 
-        System.out.println("---------------------------------");
+        System.out.println("\n---------------------------------");
         System.out.println("----------- Jugador 2 -----------");
         System.out.println("---------------------------------\n");
         System.out.print("Nombre: ");
@@ -125,7 +125,7 @@ public class Menu {
         ju.guardarVehiculo(opc2, jugador);
     }
     
-    public int fase = 0;
+    public int fase = 1;
     
     public void menuCompletoJugador1(Jugador j) {
         int opc;
@@ -185,7 +185,8 @@ public class Menu {
                 if(jugador1 == j){
                     menuCompletoJugador1(jugador2);
                 }else{
-                    ++fase;
+                    System.out.println("\n/////////////////FASE "+fase+"//////////////////////");
+                    fase++;
                     ju.generarRecursos(jugador1);
                     ju.generarRecursos(jugador2);
                     ju.crearEdificiosFases(jugador1);
@@ -197,7 +198,6 @@ public class Menu {
     }
     
     public void turnos(){
-        Menu menu = new Menu();
-        menu.menuCompletoJugador1(jugador1);
+        menuCompletoJugador1(jugador1);        
     }
 }

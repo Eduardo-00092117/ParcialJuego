@@ -26,7 +26,7 @@ public class edificioBallasEntrenamiento implements Razas{
 
     @Override
     public void crearEdificacionEntrenamiento() {
-        edificio.setNombre("Fortaleza flotante");
+        edificio.setNombre("Fortaleza de la soledad");
         edificio.setRaza("Ballas"); 
         edificio.setTiempo(2);
         edificio.setVida(200);

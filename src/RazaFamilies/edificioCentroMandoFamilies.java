@@ -26,10 +26,10 @@ public class edificioCentroMandoFamilies implements Razas{
 
     @Override
     public void crearCentroMando() {
-        edificio.setNombre("Grove Street ");
+        edificio.setNombre("Centro de mando - Families");
         edificio.setVida(1000);
         edificio.setCapacidad(10000, 5000, 3000);
-        edificio.setMontoRecurso(0, 0, 0);
+        edificio.setMontoRecurso(5000, 3000, 1000);
     }
 
     @Override

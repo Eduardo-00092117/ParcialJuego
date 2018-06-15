@@ -20,12 +20,14 @@ public class edificioBallasRecursos2 implements Razas{
 
     @Override
     public void crearEdificacionRecursos() {
-        edificio.setNombre("Cuartel de la fuerzas armadas"); 
-        edificio.setMontoActual(1000);
+        edificio.setNombre("CASA DEL ORO"); 
+        edificio.setMontoActual(0);
         edificio.setRaza("Ballas");
-        edificio.setVida(100);
+        edificio.setVida(600);
         edificio.setCapacidad(5000);
         edificio.setTiempo(3);
+        edificio.setCosto1(1, 200);
+        edificio.setCosto2(3, 400);
     }
 
     @Override
