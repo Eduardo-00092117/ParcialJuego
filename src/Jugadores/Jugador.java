@@ -366,4 +366,11 @@ public class Jugador {
             jugador.getEdificacionRecurso().get(i).setMontoActual(0);
         }
     }
+    
+    public void mostrarRecursos(Jugador jugador){
+        System.out.println("");
+        for(int i=0; i < 3; i++){
+            System.out.println("Recurso "+(i+1)+": " +jugador.getEdificioCentroMando().get(0).getMontoRecurso()[i]);
+        }
+    }
 }

@@ -157,7 +157,17 @@ public class Menu {
                 break;
             case 3:
                 if(j.getEdificioEntrenamiento().size() > 0 && j.getMilicia().size() <= 10*(j.getEdificioEntrenamiento().size())){
-                    menuMilicia(j);
+                    boolean bandera = false;
+                    for(int i=0; i < j.getEdificioEntrenamiento().size(); i++){
+                        if(j.getEdificioEntrenamiento().get(i).getTiempo() == 0){
+                            bandera = true;
+                        }
+                    }
+                    if(bandera == true){
+                        menuMilicia(j);
+                    }else{
+                        System.out.println("\nNo se ha creado aun ningun edificio de entrenamiento");
+                    }
                 }else{
                     System.out.println("\nNo se pueden crear tropas sin el edificio de entrenamiento");
                 }
@@ -173,7 +183,7 @@ public class Menu {
                 if(j.getEdificioVehiculo().size() > 0 && j.getVehiculo().size() <= 10*(j.getEdificioVehiculo().size())){
                     menuVehiculo(j);
                 }else{
-                    System.out.println("\nNo se pueden crear tropas sin el edificio de entrenamiento");
+                    System.out.println("\nNo se pueden crear vehiculos sin el edificio de creacion");
                 }
                 menuCompletoJugador1(j);
                 break;
@@ -181,6 +191,9 @@ public class Menu {
                 ju.recolectarRecursos(j);
                 menuCompletoJugador1(j);
                 break;
+            case 8:
+                ju.mostrarRecursos(j);
+                menuCompletoJugador1(j);
             case 9:
                 if(jugador1 == j){
                     menuCompletoJugador1(jugador2);
